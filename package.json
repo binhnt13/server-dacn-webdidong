@@ -1,5 +1,5 @@
 {
-  "name": "hiwa-sales-app",
+  "name": "dacn-website-di-dong",
   "version": "0.1.0",
   "private": true,
   "babel": {
@@ -77,7 +77,7 @@
     "tap": "^8.0.1",
     "webpack": "^1.14.0"
   },
-  "homepage": "https://binhnt13.github.io",
+  "homepage": "https://binhnt13.github.io/dist",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --colors --hot --config ./webpack.config.js",
     "build": "NODE_ENV=production webpack -p --progress --colors --config ./webpack.prod.config.js",
