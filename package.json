@@ -14,6 +14,7 @@
     "eslint-config-airbnb-base": "^11.0.0",
     "eslint-plugin-import": "^2.2.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "gh-pages": "^1.0.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.13.1",
     "react-auto-scroll": "^1.1.0",
@@ -76,9 +77,11 @@
     "tap": "^8.0.1",
     "webpack": "^1.14.0"
   },
+  "homepage": "https://binhnt13.github.io",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --colors --hot --config ./webpack.config.js",
     "build": "NODE_ENV=production webpack -p --progress --colors --config ./webpack.prod.config.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }
