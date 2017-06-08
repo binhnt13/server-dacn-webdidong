@@ -25,6 +25,11 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loader: 'style!css!sass'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                // loader: 'file-loader?name=localhost/src/images/[name].[ext]'
+                loader: 'url-loader?limit=9000'
             }]
     },
     plugins: [
