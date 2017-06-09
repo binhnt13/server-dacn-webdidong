@@ -78,7 +78,7 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --inline --colors --hot --config ./webpack.config.js & node src/Socket",
+    "start": "NODE_ENV=production webpack -p --progress --colors --config ./webpack.prod.config.js & node src/Socket",
     "build": "NODE_ENV=production webpack -p --progress --colors --config ./webpack.prod.config.js",
     "eject": "react-scripts eject"
   }
